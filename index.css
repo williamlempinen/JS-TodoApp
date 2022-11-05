@@ -23,12 +23,23 @@ body {
 
 }
 
+#listItem {
+    margin: 10px;
+}
+
 #submit-button {
     border-radius: 30px;
     background-color: #EA9215;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 30%;
     color: #303841;
+}
+
+.closeButton {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #11999E;
+    background-color: #303841;
+    border-radius: 8px;
 }
 
 ::placeholder {
@@ -38,8 +49,8 @@ body {
 #grid-container {
     margin: 30px;
     max-width: 100%;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: stretch;
     display: grid;
     grid-template-columns: auto;
     grid-area: auto;
