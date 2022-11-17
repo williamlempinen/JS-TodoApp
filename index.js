@@ -1,9 +1,7 @@
-let bttn = document.getElementById("submit-button");
+let addItemButton = document.getElementById("submit-button");
 let todoList = document.getElementById("todosUl");
 
-
-
-//crate a new list item when the button is clicked
+//create a new list item when the button is clicked
 function addNewTodo() {
     let input = document.getElementById("input").value;
     var liItem = document.createElement("li");
@@ -19,22 +17,21 @@ function addNewTodo() {
     } else {
         todoList.appendChild(liItem);
         document.getElementById("input").value = "";
-    } 
-    
-    let closeButton = document.getElementsByClassName("closeButton");
-    closeButton.onclick = function () {
-        var item = this.parentElement;
-        item.style.display = "none";
     }
 }
-
-bttn.onclick = addNewTodo;
-clsBttn = document.getElementsByTagName("button");
-
-clsBttn.onclick = function () {
-    var item = this.parentElement;
-    item.display = "none";
-    alert("moikka");
+/*
+//by click created close-button on li-item -> remove li-item (not working, don't know why)
+var itemCloseButton = document.getElementsByClassName("closeButton");
+var i;
+for (i = 0; i <= itemCloseButton.length; i++) {
+    itemCloseButton[i].onclick = function() {
+        itemCloseButton.parentElement.remove;
+    }
 }
+*/
+
+addItemButton.onclick = addNewTodo;
+
+
 
 
