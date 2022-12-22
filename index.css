@@ -2,13 +2,13 @@ h2 {
     margin: auto;
     padding-top: auto;
     border-radius: 20px;
-    color: #EA9215;
+    color: var(--primary-color);
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-    background-color: #EEEEEE;
+    background-color: var(--secondary-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -16,8 +16,8 @@ body {
     margin: 10px;
     border-radius: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #EA9215;
-    background-color: #303841;
+    color: var(--primary-color);
+    background-color: var(--black-color1);
     text-align: center;
     width: 40%;
 
@@ -29,21 +29,21 @@ body {
 
 #submit-button {
     border-radius: 30px;
-    background-color: #EA9215;
+    background-color: var(--primary-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 30%;
-    color: #303841;
+    color: var(--black-color1);
 }
 
 .closeButton {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #11999E;
-    background-color: #303841;
+    color: var(--blue-color0);
+    background-color: var(--black-color1);
     border-radius: 8px;
 }
 
 ::placeholder {
-    color: #11999E;
+    color: var(--blue-color0);
 }
 
 #grid-container {
@@ -54,18 +54,18 @@ body {
     display: grid;
     grid-template-columns: auto;
     grid-area: auto;
-    border: 3px dashed #11999E;
+    border: 3px dashed var(--blue-color0);
     border-radius: 30px;
     -webkit-box-shadow: 0px 0px 10px;
     box-shadow: #666 0px 0px 10px;
-    background-color: #EEEEEE;
+    background-color: var(--secondary-color);
 
 }
 
-.colors {
+:root {
     --primary-color: #EA9215;
     --secondary-color: #EEEEEE;
-    --violet0-color: #3A4750;
-    --violet1-color: #303841;
-    --orange-color0: #11999E;
+    --black-color0: #3A4750;
+    --black-color1: #303841;
+    --blue-color0: #11999E;
 }
